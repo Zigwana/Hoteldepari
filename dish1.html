@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Classic Hamburger | Hotel Depari</title>
+  <style>
+    /* 1. Global Styles */
+    body {
+        background-color: #fdfdfd;
+        color: #333;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+    }
+
+    /* 2. Header Style */
+    h1 {
+        font-size: 28px;
+        letter-spacing: 3px;
+        color: #111;
+        margin: 20px 0;
+        text-transform: uppercase;
+    }
+
+    /* 3. Image & Video Styling */
+    img, .background-video {
+        width: 100%;
+        display: block; 
+        border: none;
+        object-fit: cover;
+    }
+    
+    img {
+        height: 300px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .background-video {
+        height: auto;
+        margin-top: 20px;
+        border-radius: 10px; /* Gives the video a modern look */
+        width: 90%; /* Centers it slightly */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* 4. Text Content */
+    .description {
+        padding: 20px;
+        text-align: center;
+        font-size: 16px;
+        color: #555;
+    }
+
+    .price-tag {
+        font-size: 22px;
+        font-weight: bold;
+        color: #e67e22; /* Appetizing orange color */
+        margin-bottom: 10px;
+    }
+
+    /* 5. Button Redesign */
+    .btn-container {
+        padding-bottom: 40px;
+    }
+
+    button {
+        height: 55px; /* Taller for better mobile tapping */
+        width: 220px;
+        border: none;
+        border-radius: 30px;
+        background: #000080; /* Navy */
+        cursor: pointer;
+        transition: transform 0.2s, background 0.3s;
+        box-shadow: 0 5px 15px rgba(0,0,128,0.3);
+    }
+
+    button:active {
+        transform: scale(0.95);
+        background: #000066;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+        display: block;
+    }
+
+    /* 6. Ingredient List (New Detail) */
+    .details {
+        font-size: 13px;
+        color: #888;
+        margin-top: 5px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <center>
+    <h1>Classic Hamburger</h1>
+  </center>
+
+  <img src="dish1.jpg" alt="Delicious Hamburger">
+
+  <div class="description">
+    <div class="price-tag">$12.00</div>
+    <p>
+      Enjoy our signature double-stacked beef burger, topped with melted cheddar, 
+      fresh garden lettuce, crisp onions, and ripe tomatoes on a toasted sesame seed bun. 
+      Grilled to perfection for ultimate flavor.
+    </p>
+    <div class="details">Fresh Ingredients • Grilled Daily • Served with Fries</div>
+  </div>
+
+  <video autoplay loop muted playsinline class="background-video">
+    <source src="dish1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+    <br/>
+  <center class="btn-container">
+    <button class="btn">
+        <a href="#" id="href">ORDER NOW<br/><span style="font-size: 11px; font-weight: normal;">Click to add to cart</span></a>
+    </button>
+  </center>
+ 
+</body>
+</html>

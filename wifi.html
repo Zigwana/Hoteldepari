@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Depari Internet | Wi-Fi Login</title>
+  <style>
+    /* 1. Global Reset & Theme */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #f4f7f6; /* Soft light grey background */
+        color: #333;
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 2. Header Polish */
+    header {
+        background: #000000;
+        color: white;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 2px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    /* 3. Main Card Layout */
+    .wifi-card {
+        background: white;
+        width: 90%;
+        max-width: 350px;
+        margin-top: 50px;
+        padding: 30px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        border: 1px solid #eee;
+    }
+
+    /* 4. Logo / Icon Styling */
+    .logo-container {
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        height: 70px;
+        width: 70px;
+        object-fit: contain;
+        border-radius: 12px;
+    }
+
+    /* 5. Wi-Fi Status Info */
+    .status-text {
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 5px;
+    }
+
+    .network-name {
+        font-weight: bold;
+        color: #000;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    /* 6. The Password Box */
+    .password-box {
+        background: #fdf2f2; /* Light red/alert background */
+        border: 1px dashed #e74c3c;
+        padding: 15px;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    .password-label {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #e74c3c;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .password-value {
+        font-size: 18px;
+        color: #333;
+        font-weight: 900;
+    }
+
+    /* 7. Action Button */
+    .btn-refresh {
+        background: #000000;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        cursor: pointer;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .btn-refresh:active {
+        transform: scale(0.95);
+        background: #333;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+    <h1>DEPARI INTERNET</h1>
+</header>
+
+<div class="wifi-card">
+    <div class="logo-container">
+        <img src="logo.png" alt="Hotel Depari" class="logo">
+    </div>
+
+    <p class="status-text">Connected to Network:</p>
+    <p class="network-name">Depari_Guest_WiFi</p>
+
+    <hr style="border: 0; border-top: 1px solid #eee;">
+
+    <div class="password-box">
+        <span class="password-label">Access Instruction</span>
+        <span class="password-value">Buy a drink at the bar to get your code</span>
+    </div>
+
+    <button class="btn-refresh" onclick="window.location.reload()">
+        Check Connection
+    </button>
+</div>
+
+<p style="margin-top: 30px; font-size: 12px; color: #999;">
+    High-Speed Fiber Optic Service
+</p>
+
+</body>
+</html>

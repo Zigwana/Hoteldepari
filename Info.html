@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive Profile | Hotel Depari</title>
+  <style>
+    /* 1. Global Reset & Theme */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0F0F0F; /* Ultra-deep black */
+      color: #E0E0E0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* 2. Header Polish */
+    .executive-header {
+      width: 100%;
+      height: 70px;
+      background: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 2px solid #D4AF37; /* Gold accent */
+      margin-bottom: 30px;
+    }
+
+    .executive-header h1 {
+      font-size: 20px;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* 3. CEO Image Styling */
+    .profile-container {
+      margin-bottom: 25px;
+    }
+
+    #admin {
+      border-radius: 50%;
+      height: 230px;
+      width: 230px;
+      object-fit: cover;
+      border: 3px solid #D4AF37; /* Gold ring */
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    /* 4. Executive Quote */
+    .quote-card {
+      background-color: #1A1A1A;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 450px;
+      padding: 25px;
+      text-align: center;
+      margin-bottom: 30px;
+      border: 1px solid #333;
+    }
+
+    .quote-text {
+      color: #FFFFFF;
+      font-size: 15px;
+      line-height: 1.7;
+      font-style: italic;
+    }
+
+    /* 5. Contact Grid */
+    .contact-section {
+      width: 90%;
+      max-width: 450px;
+      padding-bottom: 40px;
+    }
+
+    .contact-title {
+      color: #D4AF37;
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .contact-item {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 15px 10px;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .contact-label {
+      color: #888;
+      font-size: 11px;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .contact-value {
+      color: #D4AF37;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="executive-header">
+    <h1>CEO Hotel Depari</h1>
+  </header>
+
+  <div class="profile-container">
+    <img src="admin.jpg" id="admin" alt="CEO Hotel Depari">
+  </div>
+
+  <div class="quote-card">
+    <p class="quote-text">
+      "Redefining luxury and comfort in the heart of the city. At Hotel Depari, we believe 
+      hospitality is more than just a service—it’s a passion."
+    </p>
+  </div>
+
+  <div class="contact-section">
+    <h2 class="contact-title">Contact Info</h2>
+    <div class="contact-grid">
+      <a href="tel:+256747211914" class="contact-item">
+        <span class="contact-label">WhatsApp</span>
+        <span class="contact-value">+256 747 211 914</span>
+      </a>
+      <a href="#" class="contact-item">
+        <span class="contact-label">TikTok</span>
+        <span class="contact-value">@hotel_depari</span>
+      </a>
+      <a href="#" class="contact-item">
+        <span class="contact-label">Instagram</span>
+        <span class="contact-value">@hotel_depari</span>
+      </a>
+      <a href="#" class="contact-item">
+        <span class="contact-label">Twitter</span>
+        <span class="contact-value">@hotel_depari</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

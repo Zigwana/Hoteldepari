@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Depari Services</title>
+  <style>
+    /* 1. Global Reset & Brand Theme */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #fdfdfd;
+        color: #333;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* 2. Header Polish */
+    header {
+        background: #000000;
+        color: white;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 4px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+        font-size: 24px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    /* 3. Main Container */
+    .main {
+        flex: 1;
+        padding: 30px 20px;
+    }
+
+    /* 4. Action Section (The New Part) */
+    .action-section {
+        background: #f4f4f4;
+        padding: 20px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+
+    .action-section h2 {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+        color: #666;
+    }
+
+    .btn-group {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .btn-main {
+        flex: 1;
+        max-width: 150px;
+        padding: 15px;
+        background: #D4AF37; /* Luxury Gold */
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: 14px;
+        box-shadow: 0 4px 8px rgba(212, 175, 55, 0.3);
+        transition: 0.3s;
+    }
+
+    .btn-main:active {
+        transform: scale(0.95);
+    }
+
+    /* 5. Services List Layout */
+    .services-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        list-style: none;
+    }
+
+    .service-item {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .service-item a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 25px;
+        height: 65px;
+        background: #000000;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+    }
+
+    .service-item a:active {
+        background: #000080; /* Navy accent */
+        transform: scale(0.98);
+    }
+
+    .arrow {
+        color: #D4AF37; /* Gold accent */
+        font-size: 20px;
+    }
+
+    /* 6. Footer Navigation */
+    .footer-nav {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .home-link {
+        color: #888;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+    <h1>SERVICES</h1>
+</header>
+
+<div class="main">
+    
+    <div class="action-section">
+        <h2>Quick Actions</h2>
+        <div class="btn-group">
+            <a href="book.html" class="btn-main">Book Room</a>
+            <a href="order.html" class="btn-main">Order Food</a>
+        </div>
+    </div>
+
+    <ul class="services-container">
+        <li class="service-item">
+            <a href="rooms.html">
+                <span>Accommodation</span>
+                <span class="arrow">›</span>
+            </a>
+        </li>
+        <li class="service-item">
+            <a href="food.html">
+                <span>Restaurant & Bar</span>
+                <span class="arrow">›</span>
+            </a>
+        </li>
+        <li class="service-item">
+            <a href="wifi.html">
+                <span>Free Guest Wi-Fi</span>
+                <span class="arrow">›</span>
+            </a>
+        </li>
+        <li class="service-item">
+            <a href="rooms.html">
+                <span>Conference Rooms</span>
+                <span class="arrow">›</span>
+            </a>
+        </li>
+    </ul>
+
+    <div class="footer-nav">
+        <a href="home.html" class="home-link">← Return to Home</a>
+    </div>
+</div>
+
+</body>
+</html>

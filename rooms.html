@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Depari - Rooms</title>
+    <style>
+        /* General Styles */
+        body {
+            background-color: #121212; /* Deep Dark Background */
+            color: #ffffff;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #D4AF37; /* Gold Bottom Border */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #D4AF37; /* Gold Title */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Room Grid Layout (2 columns for mobile) */
+        .room-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 15px;
+            padding: 20px;
+        }
+
+        /* Individual Room Card */
+        .room-card {
+            background-color: #1E1E1E; /* Dark Grey Card */
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid #333;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s;
+        }
+
+        /* Image Styling */
+        .room-card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-bottom: 2px solid #D4AF37;
+        }
+
+        /* Room Info Padding */
+        .room-info {
+            padding: 10px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .room-info h3 {
+            font-size: 14px;
+            margin: 5px 0;
+            color: #D4AF37;
+        }
+
+        .room-info p {
+            font-size: 11px;
+            color: #BDBDBD;
+            margin: 5px 0 10px 0;
+            line-height: 1.4;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        /* Button Styling */
+        .book-btn {
+            background-color: #D4AF37; /* Gold Button */
+            color: #000000;
+            border: none;
+            padding: 8px 0;
+            width: 90%;
+            margin: 0 auto 10px auto;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 12px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .book-btn:active {
+            background-color: #b8952e;
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hotel Depari Rooms</h1>
+</header>
+
+<div class="room-container">
+
+    <div class="room-card">
+        <img src="room1.jpg" alt="Executive Suite">
+        <div class="room-info">
+            <h3>Executive Suite</h3>
+            <p>Minimalist luxury with premium king bedding.</p>
+            <div class="price">$80 / Night</div>
+        </div>
+        <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="room-card">
+        <img src="room2.jpg" alt="Smart Apartment">
+        <div class="room-info">
+            <h3>Smart Studio</h3>
+            <p>Modern tech with custom ambient LED lighting.</p>
+            <div class="price">$75 / Night</div>
+        </div>
+        <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="room-card">
+        <img src="room3.jpg" alt="Standard Double">
+        <div class="room-info">
+            <h3>Standard Double</h3>
+            <p>Cozy and efficient for the busy professional.</p>
+            <div class="price">$50 / Night</div>
+        </div>
+        <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="room-card">
+        <img src="room4.jpg" alt="Deluxe Twin">
+        <div class="room-info">
+            <h3>Deluxe Twin</h3>
+            <p>Two premium beds for shared comfort.</p>
+            <div class="price">$65 / Night</div>
+        </div>
+        <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="room-card">
+        <img src="room1.jpg" alt="Family Haven">
+        <div class="room-info">
+            <h3>Family Haven</h3>
+            <p>Extra space designed for the whole family.</p>
+            <div class="price">$110 / Night</div>
+        </div>
+        <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="room-card">
+        <img src="room2.jpg" alt="Penthouse View">
+        <div class="room-info">
+            <h3>Penthouse View</h3>
+            <p>The finest view in the city with top amenities.</p>
+            <div class="price">$150 / Night</div>
+        </div>
+        <button class="book-btn">Book Now</button>
+    </div>
+
+</div>
+
+</body>
+</html>

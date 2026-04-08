@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Room | Hotel Depari</title>
+    <style>
+        body { background: #0F0F0F; color: white; font-family: 'Segoe UI', sans-serif; padding: 20px; }
+        .container { max-width: 400px; margin: 0 auto; }
+        h2 { color: #D4AF37; text-align: center; text-transform: uppercase; margin-bottom: 25px; }
+        form { display: flex; flex-direction: column; gap: 15px; }
+        label { font-size: 12px; color: #888; text-transform: uppercase; }
+        input, select { padding: 15px; border-radius: 10px; border: 1px solid #333; background: #1A1A1A; color: white; outline: none; }
+        input:focus { border-color: #D4AF37; }
+        .btn-submit { background: #D4AF37; color: black; font-weight: bold; border: none; padding: 18px; border-radius: 30px; margin-top: 10px; text-transform: uppercase; }
+        .btn-submit:active { transform: scale(0.95); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Room Reservation</h2>
+        <form action="https://formspree.io/f/xnjoorek" method="POST">
+            <input type="text" name="name" placeholder="Your Full Name" required>
+            <input type="tel" name="phone" placeholder="Phone Number (e.g. +256...)" required>
+            
+            <label>Arrival Date</label>
+            <input type="date" name="check_in" required>
+            
+            <select name="room_selection">
+                <option value="Apartment">Apartment</option>
+                <option value="Luxury">Luxury Room</option>
+                <option value="Standard">Standard Room</option>
+                <option value="Conference">Conference Room</option>
+            </select>
+            
+            <button type="submit" class="btn-submit">Confirm Booking</button>
+        </form>
+    </div>
+</body>
+</html>

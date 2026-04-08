@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Depari Restaurant | Menu</title>
+  <style>
+    /* 1. Global Reset & Theme */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #FFF9F0; /* Matching the home page cream theme */
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      color: #333;
+    }
+
+    /* 2. Header Style */
+    h1 {
+      height: 90px;
+      width: 100%;
+      background: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 22px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    /* 3. "Interesting" Daily Specials Section */
+    .specials-container {
+      padding: 20px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 15px;
+      border-left: 4px solid #D4AF37; /* Gold accent */
+      padding-left: 10px;
+    }
+
+    /* Horizontal scroll for dishes */
+    .menu-scroll {
+      display: flex;
+      overflow-x: auto;
+      gap: 15px;
+      padding-bottom: 10px;
+      scrollbar-width: none;
+    }
+
+    .menu-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .food-card {
+      flex: 0 0 160px;
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+    }
+
+    .food-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    .badge {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      background: #D4AF37;
+      color: white;
+      font-size: 10px;
+      padding: 3px 8px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .food-info {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .food-name {
+      font-size: 13px;
+      font-weight: bold;
+      display: block;
+    }
+
+    .food-price {
+      font-size: 12px;
+      color: #e67e22; /* Appetizing orange */
+      font-weight: bold;
+    }
+
+    /* 4. Global Cuisine Info */
+    .cuisine-info {
+      background: #000080; /* Navy brand color */
+      color: white;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .cuisine-info p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .btn-back {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 25px;
+      background: white;
+      color: #000080;
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main">
+    <center><h1>DEPARI RESTAURANT</h1></center>
+
+    <div class="specials-container">
+      <h2 class="section-title">Chef's Specials</h2>
+      
+      <div class="menu-scroll">
+        <a href="dish1.html" class="food-card">
+          <div class="badge">HOT</div>
+          <img src="dish1.jpg" alt="Burger">
+          <div class="food-info">
+            <span class="food-name">Hamburger</span>
+            <span class="food-price">$12.00</span>
+          </div>
+        </a>
+
+        <a href="dish2.html" class="food-card">
+          <img src="dish2.jpg" alt="Sandwich">
+          <div class="food-info">
+            <span class="food-name">Club Sandwich</span>
+            <span class="food-price">$9.50</span>
+          </div>
+        </a>
+
+        <a href="dish4.html" class="food-card">
+          <div class="badge">BEST</div>
+          <img src="dish4.jpg" alt="Pizza">
+          <div class="food-info">
+            <span class="food-name">Stone Pizza</span>
+            <span class="food-price">$15.00</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="cuisine-info">
+      <h3>International Flavors</h3>
+      <p style="margin-top: 10px;">
+        Explore a world of taste with our authentic American, African, Chinese, and Italian dishes. 
+        Freshly prepared by our top chefs daily.
+      </p>
+      <a href="home.html" class="btn-back">Return to Home</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
